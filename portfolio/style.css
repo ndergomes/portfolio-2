@@ -1,48 +1,80 @@
-{ /* === Reset === */
+/* === Reset === */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}}
-{/* === Globals*/
-body {
+}
+
+body, html {
     font-family: Helvetica, sans-serif;
     background-color: #2b2727;
     line-height: 1.6;
-    padding: 20px;
-}
-/* layout */ header, main, footer {
-    padding: 20px;
-}
-/* type*//*a {
-    color:white;
-    }
-    a:hover {
-        color: aquamarine;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
     }
 
-*/
+section{
+    height: 100vh;
+    height: 100dvh;
+    scroll-snap-align: start;
+}
+h1, h2, p {
+    color:   white;
+} 
 
-
+a, a:hover {
+    color: greenyellow;
 }
 
-{/* Header */ 
-header {
-    background-color:#2b2727;
-    color: white;
+.fullpage{
+    box-sizing: border-box;
+    height: 100vh;
+    border: dashed red 1px;
+    border-radius: 20px;
+    margin: 3px;
+    box-shadow: 0 10 20px  blue;
+    display: flex;
+    align-items:top;
+    height: 100vh;
+    height: 100dvh;
+    scroll-snap-align: start;
+}
+
+.navbar{
+    box-sizing: border-box;
+    border: dashed white 1px;
+    border-radius: 21px;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+section.blocotemplate {
+    /* === Positioning === */
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  
+    /* === Box Model === */
+    width: 80%;
+    max-width: 1200px;
+    margin: 40px auto;
     padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+  
+    /* === Visual === */
+    background-color: #222;
+    color: #eee;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.7);
     text-align: center;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    letter-spacing: 5px;
-    color: white;
-
-}}
-
- 
-/* footer*/
-footer {
-    color:aqua;
-}
+  
+    /* === Miscellaneous === */
+    cursor: default;
+    user-select: none;
+    overflow: hidden;
+  }
+  
